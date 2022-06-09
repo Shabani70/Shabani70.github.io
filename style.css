@@ -18,10 +18,13 @@ li:hover {
     padding: 0 32px;
     transform: scale(1);
 }
-
+.list-item {
+    margin-bottom: 8px;
+}
 .sub-list-item{
     color: midnightblue;
     font-size: large;
+    margin-bottom: 15px;
 }
 
 p {

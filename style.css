@@ -1,5 +1,5 @@
 body {
-    font-family: "Apple SD Gothic Neo";
+    font-family: "Apple SD Gothic Neo", sans-serif;
   padding: 0 12px;
   margin: 0;
   background: #F7F7F7;
@@ -10,21 +10,27 @@ li {
     line-height: 150%;
 }
 
-li:hover {
-    background-color: black;
-    color: white;
+
+.list-item {
+    margin-bottom: 8px;
+}
+
+.list-item:hover {
+    background-color: Gainsboro;
+    color: black;
     /*-ms-transform: scale(1.1); !* IE 9 *!*/
     /*-webkit-transform: scale(1.1); !* Safari 3-8 *!*/
     padding: 0 32px;
     transform: scale(1);
 }
-.list-item {
-    margin-bottom: 8px;
-}
 .sub-list-item{
-    color: midnightblue;
+    color: black;
     font-size: large;
     margin-bottom: 15px;
+}
+
+.sub-list-item:hover {
+    color: black;
 }
 
 p {

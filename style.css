@@ -33,6 +33,11 @@ li {
     color: black;
 }
 
+.sub-sub-list-item{
+    color: black;
+    font-size: medium;
+    margin-bottom: 15px;
+}
 p {
     font-weight: bold;
 }

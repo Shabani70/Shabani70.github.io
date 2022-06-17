@@ -47,6 +47,30 @@ p {
     font-weight: bold;
 }
 
+.biomed-table {
+    display: block;
+    border: solid black;
+    width: 450px;
+}
+
+.title {
+    border: solid thin black;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+.current-titles {
+    border: solid thin black;
+    text-align: center;
+    width: 200px;
+}
+
+.grade {
+    border: solid thin black;
+    text-align: center;
+    width: auto;
+}
+
 
 /*.block,*/
 /*li {*/

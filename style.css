@@ -5,6 +5,15 @@ body {
   background: #F7F7F7;
 }
 
+header {
+    background-color: #333333;
+    color:white;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
 li {
     font-size: 20px;
     line-height: 150%;
@@ -70,8 +79,18 @@ p {
     text-align: center;
     width: auto;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.col-one {
+    grid-column: 1;
+}
 
-
+.col-two {
+    grid-column: 2;
+}
 /*.block,*/
 /*li {*/
 /*  border: 2px solid blue;*/

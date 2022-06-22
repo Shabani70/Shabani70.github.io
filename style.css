@@ -1,8 +1,9 @@
 body {
+    color: white;
     font-family: "Apple SD Gothic Neo", sans-serif;
   padding: 0 12px;
   margin: 0;
-  background: #F7F7F7;
+  background: black;
 }
 
 header {
@@ -33,7 +34,6 @@ li {
     transform: scale(1);
 }
 .sub-list-item{
-    color: black;
     font-size: large;
     margin-bottom: 15px;
 }
@@ -43,7 +43,6 @@ li {
 }
 
 .sub-sub-list-item{
-    color: black;
     font-size: medium;
     margin-bottom: 15px;
 }

@@ -6,14 +6,50 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <meta charset="UTF-8">
 <title>YTD Adjustments</title>
-<h2>As of: 5.16.22</h2>
-<ul>
-    <li>Total 'budget': $779,259</li>
-    <li>Total spent: $336,994</li>
-    <li>Remaining: $442,265</li>
+<body>
+<h2>As of: 6.22.22</h2>
+<table>
+    <tbody id="adjustments">
+    <tr>
+        <td>Total 'budget':</td><td class="amount"> 579680</td>
+    </tr>
+    <tr>
+        <td>Total spent:</td><td class="amount">-341742</td>
+    </tr>
+    </tbody>
+</table>
 
-</ul>
+<script>
+    let sum = 0;
+    
+    const cells = document.querySelectorAll('td:nth-of-type(2)');
+    
+    cells.forEach(cell => {
+        sum += Number.parseFloat(cell.firstChild.data);
+    });
+    
+    const newRow = document.createElement('td');
+    
+    const firstCell = document.createElement('td');
+    const firstCellText = document.createTextNode('Remaining:');
+    firstCell.appendChild(firstCellText);
+    newRow.appendChild(firstCell);
 
+    const secondCell = document.createElement('td');
+    const secondCellText = document.createTextNode(sum);
+    secondCell.appendChild(secondCellText);
+    newRow.appendChild(secondCell);
+    
+    document.getElementById('adjustments').appendChild(newRow)
+
+    let x = document.querySelectorAll(".amount");
+    for (let i = 0, len = x.length; i < len; i++) {
+        let num = Number(x[i].innerHTML)
+            .toLocaleString('en');
+        x[i].innerHTML = num;
+        x[i].classList.add("currSign");
+    }
+</script>
 
 </body>
 </html>

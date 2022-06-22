@@ -39,6 +39,7 @@ li {
 }
 
 .sub-list-item:hover {
+    background-color: Gainsboro;
     color: black;
 }
 
@@ -53,12 +54,6 @@ li {
 }
 p {
     font-weight: bold;
-}
-
-.biomed-table {
-    display: block;
-    border: solid black;
-    width: 450px;
 }
 
 .title {
